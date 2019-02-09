@@ -1,2 +1,2 @@
 # Aerodynamik-von-Modellraketen
-Dieses Projekt befasst sich mit dem Einfluss der Form einer Raketenspitze auf dessen Luftwiderstand und Flugstabilität  
+Dieses Projekt befasst sich mit dem Einfluss der Form der Raketenspitze auf Luftwiderstand und Flugstabilität der Rakete  
