@@ -8,4 +8,4 @@ Das Dokument wurde im Editor _TeX-Studio_ mit dem Kompiler _LuaLaTeX_ erzeugt:
 
 `lualatex -synctex=1 -interaction=nonstopmode`
 
-##Plakat
+## Plakat
