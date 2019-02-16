@@ -1,11 +1,23 @@
 # Aerodynamik-von-Modellraketen
-Dieses Projekt befasst sich mit dem Einfluss der Form der Raketenspitze auf Luftwiderstand und Flugstabilität einer Modellrakete  
+Dieses Projekt befasst sich mit dem Einfluss der Form der Raketenspitze auf Luftwiderstand und Flugstabilität einer Modellrakete. Das Projekt wurde am 15.02.2018 beim Regionalwettbewerb Jugend Forscht in Emden mit dem 1. Preis ausgezeichnet.
+
+Mit diesem Repository soll es jedem ermöglicht werden, unsere Arbeit einzusehen und nachzuvollziehen. Deshalb sind hier nicht nur die Schriftliche Fassung enthalten, sondern auch alle zugrunde liegenden Daten. Für TeX-Interessierte können ebenfalls die TeX-Dokumente eingesehen werden.
+
+## Kurzfassung
+In dieser Arbeit wird der Einfluss der Raketenspitze auf den Flug einer Modellrakete untersucht. Diese Untersuchung findet anhand der selbst gebauten Rakete FTV statt, wobei Luftwiderstand und Flugstabilität untersucht wurden. Es wurden fünf Formen von Raketenspitzen betrachtet.
+	
+Die Untersuchung des Luftwiderstandes hat das Ziel, von den Spitzen die mit der grö"sten Flughöhe zu ermitteln. Dafür wird im Windkanal der Widerstandsbeiwert von FTV mit jeder der Spitzen bestimmt. Anschlie"send wird ein möglichst simples Modell entwickelt, mit dem die Flughöhe bestimmt wird. 
+Aus dem Versuch ergab sich, dass die Ogive als Spitzenform im Unterschallbereich den anderen betrachteten Formen in der erreichten theoretischen Flughöhe überlegen war. Die Hypothese, dass ein knickfreier Übergang zwischen Körperrohr und Spitze die Flughöhe verbessert, wurde bestätigt. Die Haack Spitze zeigte allerdings entgegen der Erwartung keine Vorteile.  
+	
+Die Untersuchung der Flugstabilität fand zunächst theoretisch statt, wobei ein Verfahren zur Berechnung des Druckpunktes eingesetzt wurde. Zusätzlich wurde ein Versuch im Windkanal durchgeführt.
+Die theoretische Untersuchung ergab, dass FTV mit allen Spitzen ausreichende Flugstabilität aufweist. Diese Ergebnisse konnten durch den Versuch im Windkanal bestätigt werden, wobei zusätzlich festgestellt wurde, dass sich die Rakete quer zum Wind stabil ausrichten kann. Das ist jedoch im Flug sehr unwahrscheinlich.
+	
+Im Vergleich der Spitzen lässt sich keine als optimal feststellen. Welche Spitze für eine konkrete Rakete in Bezug auf die Flugstabilität am besten ist, hängt davon ab, ob eine zu gro"se oder kleine Kaliberzahl vorliegt.
 
 ## Schriftliche Arbeit
-Hier finden sie die Schriftliche Ausarbeitung, wie sie für den Wettbewerb Jugend Forscht abgegeben wurde. Zusätzlich finden sie hier auch alle bötigen Dateien, um das Dokument aus der TeX-Datei zu erzeugem.
-
-Das Dokument wurde im Editor _TeX-Studio_ mit dem Kompiler _LuaLaTeX_ erzeugt:
+Die Schriftliche Fassung des Projektes wurde mit dem Editor _TeX-Studio_ mit dem Kompiler _LuaLaTeX_ erzeugt:
 
 `lualatex -synctex=1 -interaction=nonstopmode`
 
 ## Plakat
+Die Plakate wurden mit dem freien Desktop-Publisher _Scribus_ erstellt. In diesem Repository finden sie die Plakate als PDF und als Scribus-Datei.
