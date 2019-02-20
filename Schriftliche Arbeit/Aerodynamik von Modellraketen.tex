@@ -92,14 +92,14 @@ Eine besondere Verbreitung genie"sen ballistische Raketen unter nicht-profession
 
 Seit 1958 sind fertige Raketenmotoren kommerziell erhältlich, wodurch der gefährlichste Aspekt des Amateurraketenbaus weggefallen ist \cite{sn}. Zusätzlich wurde in den USA 1957 die National Association of Rocketry (NAR) gegründet, welche durch einen Sicherheitskodex die Begriffe Modellrakete und "`High-Power"' Modellrakete (eng. High Power Rocket) definiert. Dieser Kodex findet bis heute weltweit Anerkennung, wodurch der Modellraketenbau im Gegensatz zum frühen Amateurraketenbau zu einem ungefährlichen Hobby geworden ist \cite{om}.
 
-\paragraph{Bedeutung von Aerodynamik}
-In der Luft- und Raumfahrt hatte die Aerodynamik schon immer eine gro"se Bedeutung, in den letzten Jahren hat sie sich jedoch in viele neue Gebiete verbreitet. In der Entwicklung von neuen Fortbewegungsmitteln, die möglichst effizient und umweltschonend sind, spielt die Optimierung der Aerodynamik heute eine wichtige Rolle und hat sich somit auf fast alle Bereiche der zivilen Fortbewegung ausgebreitet. Die Methodik dieser Arbeit kann daher nicht nur auf kleine Modellraketen angewendet werden, sondern auch auf die Entwicklung anderer Fahrzeuge.
+\paragraph{Funktion von Raketenspitzen}
+Raketenspitzen haben im Wesentlichen zwei Funktionen. Die Spitze wir direkt von der Luft angeströmt, somit trägt sie wesentlich zu den aerodynamischen Eigenschaften bei. Neben der aerodynamischen Funktion dienen Raketenspitzen in der Raumfahrt und bei Experimentalraketen als Frachtraum.
+
+%\paragraph{Bedeutung von Aerodynamik}
+%In der Luft- und Raumfahrt hatte die Aerodynamik schon immer eine gro"se Bedeutung, in den letzten Jahren hat sie sich jedoch in viele neue Gebiete verbreitet. In der Entwicklung von neuen Fortbewegungsmitteln, die möglichst effizient und umweltschonend sind, spielt die Optimierung der Aerodynamik heute eine wichtige Rolle und hat sich somit auf fast alle Bereiche der zivilen Fortbewegung ausgebreitet. Die Methodik dieser Arbeit kann daher nicht nur auf kleine Modellraketen angewendet werden, sondern auch auf die Entwicklung anderer Fahrzeuge.
 
 \paragraph{Eingrenzung des Themas}
-Als Versuchsobjekt kommt in dieser Arbeit die selbst entwickelte Modellrakete "`FTV"' (Flight Test Vehicle) zum Einsatz. Somit bezieht sich diese Arbeit auf Geschwindigkeiten im Unterschallbereich.
-Untersucht wird der Einfluss der Raketenspitze auf das Flugverhalten. Die Spitze wird direkt von der Luft angeströmt, somit sollte die Raketenspitze einen starken Einfluss auf das Flugverhalten haben. Des Weiteren gibt es bei den Spitzen eine Vielfalt an unterschiedlichen Formen. 
-
-Die Untersuchung findet in zwei gro"sen Themenblöcken statt. Der ersten Block widmet sich dem Einfluss des Luftwiderstandes auf die Flugleistung der Rakete, der zweite Block beschäftigt sich mit der Flugstabilität einer Rakete. Beide Blöcke enthalten experimentelle Anteile, einen Versuch im Windkanal und den Start der Rakete. Die theoretische Untersuchung findet zum Luftwiderstand anhand einer numerischen Flugsimulation statt, zur Untersuchung der Flugstabilität kommt ein analytisches Verfahren zum Einsatz. 
+Untersucht wird der Einfluss der Raketenspitze auf das Flugverhalten. Die Untersuchung findet in zwei Themenblöcken statt. Der ersten Block widmet sich dem Einfluss des Luftwiderstandes auf die Flugleistung der Rakete, der zweite Block beschäftigt sich mit der Flugstabilität einer Rakete. Beide Blöcke enthalten experimentelle Anteile, einen Versuch im Windkanal und den Start der Rakete. Die theoretische Untersuchung findet zum Luftwiderstand anhand einer numerischen Flugsimulation statt, zur Untersuchung der Flugstabilität kommt ein analytisches Verfahren zum Einsatz.
 
 \paragraph{Zielsetzung dieser Arbeit}
 Primäres Ziel dieser Arbeit ist es natürlich, einen Einblick in die Auswirkungen der Raketenspitze auf die Flugleistung einer Modellrakete zu erhalten. Darüber hinaus sollen einfache und nachvollziehbare Modelle genutzt bzw. falls mögliche selbst entwickelt werden, um ein besseres Verständnis der zugrunde liegenden Physik zu ermöglichen. Es soll ein breites Spektrum an Methoden eingesetzt werden, sowohl experimentell als auch theoretisch. Um anderen Modellraketenbauern oder Aerodynamikinteressierten unsere Ergebnisse und Methoden zur Verfügung zu stellen, soll das Projekt auf der Plattform  \emph{GitHub} veröffentlicht werden.
@@ -110,72 +110,40 @@ Primäres Ziel dieser Arbeit ist es natürlich, einen Einblick in die Auswirkung
 \section{Untersuchungsgegenstand und Versuchsumgebung}
 
 \subsection{Grundlagen des Modellraketenbaus}
-
-Wie bereits erwähnt, wird der Begriff Modellrakete durch einen Sicherheitskodex der NAR definiert. Einige wichtige Punkte sind \cite{om}:
-\begin{enumerate}
-	\item Modellraketen dürfen nur aus leichten Materialien wie Papier, Holz, Plastik und Gummi hergestellt werden, angepasst an die Motorenstärke und die Leistung der Modellrakete.
-	
-	\item In Modellraketen dürfen nur geprüfte, industriell gefertigte Raketenmotoren eingesetzt werden. 
-	
-	\item Es muss ein Bergungssystem verwendet werden, damit die Modellrakete unbeschädigt wieder landen kann und wiederverwendbar ist.
-	
-	\item Startgewicht und Gesamtimpuls des Motors sind mit $1,5 \text{ kg}$ und $320 \text{ Ns}$ begrenzt.
-	
-	\item Die Flugstabilität der Rakete ist vor dem ersten Start zu überprüfen.
-\end{enumerate}
-
-
-\subsubsection{Flug einer Modellrakete}
-\label{sssec-Flug-einer-Modellrakete}
+%
+%Wie bereits erwähnt, wird der Begriff Modellrakete durch einen Sicherheitskodex der NAR definiert. Einige wichtige Punkte sind \cite{om}:
+%\begin{enumerate}
+%	\item Modellraketen dürfen nur aus leichten Materialien wie Papier, Holz, Plastik und Gummi hergestellt werden, angepasst an die Motorenstärke und die Leistung der Modellrakete.
+%	
+%	\item In Modellraketen dürfen nur geprüfte, industriell gefertigte Raketenmotoren eingesetzt werden. 
+%	
+%	\item Es muss ein Bergungssystem verwendet werden, damit die Modellrakete unbeschädigt wieder landen kann und wiederverwendbar ist.
+%	
+%	\item Startgewicht und Gesamtimpuls des Motors sind mit $1,5 \text{ kg}$ und $320 \text{ Ns}$ begrenzt.
+%	
+%	\item Die Flugstabilität der Rakete ist vor dem ersten Start zu überprüfen.
+%\end{enumerate}
 
 \begin{wrapfigure}{l}{0.4\textwidth}
 	\centering
 	\includegraphics[width=0.3\textwidth]{Bilder/Flug-einer-Modellrakete.png}
-	\caption{Die Phasen des Fluges einer Modellrakete \cite{sn}}
+	\caption{Die Phasen des Fluges einer Modellrakete (eigene Abb. nach \cite{sn})}
 	\label{fig-Flug-einer-Modellrakete}
-	\vspace{-35pt}
+	\vspace{-45pt}
 \end{wrapfigure}
 
+\paragraph{Flug einer Modellrakete}
+\label{sssec-Flug-einer-Modellrakete}
 Der Flug einer Modellrakete lässt sich durch mehrere Phasen beschreiben \cite{om,sn}:
 \begin{enumerate}
 	\item \textbf{Start:} Die Rakete hebt ab und verlässt die Startrampe.
 	\item \textbf{Beschleunigungsphase:} Durch den Schub des Raketenmotors wird die Rakete beschleunigt.
-	\item \textbf{Freiflugphase:} Die Rakete wird in dieser Phase nicht mehr angetrieben, gewinnt aber durch ihre Geschwindigkeit bis zum Erreichen des \textit{Apogäums (eng. Apogee)}, dem höchsten Punkt der Flugbahn, weiter an Höhe.
+	\item \textbf{Freiflugphase:} Die Rakete wird in dieser Phase nicht mehr angetrieben, gewinnt aber bis zum Erreichen des \textit{Apogäums}, dem höchsten Punkt der Flugbahn, weiter an Höhe.
 	\item \textbf{Bergung:} Meist kurz nach dem Apogäum löst das Bergungssystem aus. Die Rakete sinkt dann mit langsamer Geschwindigkeit, bis sie landet.
 \end{enumerate}
 
 \noindent
-Das "`Timing"' der Flugphasen wird dabei vom Raketenmotor vorgegeben. Siehe \ref{sssec-Aufbau-von-Raketenmotoren} für Näheres.
-
-
-\subsubsection{Bauteile einer Modellrakete}
-\label{sssec-Bauteile-einer-Modellrakete}
-
-Auch wenn es viele unterschiedliche Modellraketen gibt, bleiben noch einige Bauteile, die sich an nahezu jedem Modell finden. Im Folgenden werden die wesentlichen Bauteile einer Modellrakete beschrieben \cite{om}.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width=0.5\textwidth]{Bilder/Bauteile-einer-Modellrakete.png}
-	\caption{Bauteile einer einfachen Modellrakete \cite{om}}
-\end{figure}
-
-\begin{description}
-	\item[Körperrohr] Die Funktion des Körperrohrs ist einfach, es stellt den Hauptkörper der Rakete dar.
-	
-	\item[Flossen bzw. Leitwerke] Diese Bauteile sorgen für die aerodynamische Stabilität der Rakete, da der Flugkörper ansonsten keine senkrechte Flugbahn verfolgen würde \cite{om}.
-	
-	\item[Nasenkonus] Neben der aerodynamischen Funktion spielt die Spitze auch bei der Bergung der Rakete eine Rolle. Sie wird vom Körperrohr getrennt, um das Bergungssystem freizugeben.
-	
-	\item[Motorhalterung] Die Motorhalterung bietet eine mechanische Verbindung zwischen dem Raketenmotor und dem Körperrohr.
-	
-	\item[Bergungssystem] Das Bergungssystem besteht aus einem Fallschirm und dem Schockband, welches diesen mit dem Körperrohr verbindet. Es besteht aus einem elastischen Material, um die kurzzeitig gro"se Kraft beim Öffnen des Fallschirms abzufedern.
-	
-	\item[Leitröhrchen] Um die Rakete aerodynamisch zu stabilisieren, ist zunächst eine gewisse Geschwindigkeit notwendig. Damit die Rakete zu Beginn des Fluges nicht vom Kurs abweicht, ist sie über die Leitröhrchen mit einer Startvorrichtung verbunden.
-\end{description}
-
-
-\subsubsection{Aufbau von Raketenmotoren}
-\label{sssec-Aufbau-von-Raketenmotoren}
+Das "`Timing"' der Flugphasen wird dabei vom Raketenmotor vorgegeben.
  
 \begin{figure}[h]
 	\centering
@@ -183,14 +151,14 @@ Auch wenn es viele unterschiedliche Modellraketen gibt, bleiben noch einige Baut
 	\caption{Querschnitt eines Raketenmotors \cite{om}}
 \end{figure}
 
-\noindent
-Alle Raketenmotoren besitzen eine \textit{Treibladung}, welche durch Verbrennung nach dem Rückstoßprinzip eine Schubkraft erzeugt.
-Nachdem die Treibladung abgebrannt ist, entzündet sie die \textit{Verzögerungsladung}. Diese ist für die Verzögerungszeit verantwortlich, nach der die \textit{Ausstoßladung} gezündet wird \cite{sn}.
-Die Ausstoßladung löst das  Bergungssystems aus, indem sie das Körperrohr unter Druck setzt, und das Bergungssystem herauswirft \cite{om}.
+\paragraph{Aufbau von Raketenmotoren}
+Alle Raketenmotoren besitzen eine \textit{Treibladung}, welche durch Verbrennung nach dem Rücksto"sprinzip eine Schubkraft erzeugt.
+Nachdem die Treibladung abgebrannt ist, entzündet sie die \textit{Verzögerungsladung}. Diese ist für die Verzögerungszeit verantwortlich, nach der die \textit{Aussto"sladung} gezündet wird \cite{sn}.
+Die Aussto"sladung löst das  Bergungssystems aus, indem sie das Körperrohr unter Druck setzt, und das Bergungssystem herauswirft \cite{om}. Dadurch wir die Spitze vom Körperrohr getrennt.
 
 Raketenmotoren werden durch eine Kodierung klassifiziert, wie z.B. \textsf{C6-3}. Der Buchstabe am Anfang gibt einen Bereich für den Gesamtimpuls des Motors in Ns an (siehe Tabelle \ref{tab-Motorkodierungen}).
 Die erste Zahl steht für den durchschnittlichen Schub des Raketenmotors in N, wobei der Schub typischerweise meist nicht konstant über die Zeit verläuft, sondern kurz nach der Zündung einen Peak aufweist.
-Die letzte Zahl gibt die Verzögerungszeit zwischen Brennschluss und Auslösen der Ausstoßladung an. Bei dem genannten Beispiel \textsf{C6-3} würde es sich also um einen Raketenmotor mit 5 -- 10 Ns Gesamtimpuls handeln, mit einer durchschnittlichen Schubkraft von 6 N und einer Verzögerungszeit von 3 s. 
+Die letzte Zahl gibt die Verzögerungszeit zwischen Brennschluss und Auslösen der Aussto"sladung an. Bei dem genannten Beispiel \textsf{C6-3} würde es sich also um einen Raketenmotor mit 5 -- 10 Ns Gesamtimpuls handeln, mit einer durchschnittlichen Schubkraft von 6 N und einer Verzögerungszeit von 3 s. 
 
 \begin{table}[H]
 \caption{Die Buchstabenkodierungen}
@@ -213,7 +181,7 @@ Die letzte Zahl gibt die Verzögerungszeit zwischen Brennschluss und Auslösen d
 
 \subsection{Der Flugkörper FTV}
 
-Der in diesem Projekt untersuchte Flugkörper \texttt{FTV} besteht aus den in \ref{sssec-Bauteile-einer-Modellrakete} beschriebenen Komponenten einer Modellrakete. Insgesamt weist FTV eine Länge von ca. 68 cm auf, wobei das Körperrohr 50 cm der Länge ausmacht. Die Raketenspitzen haben in etwa eine Länge von 18 cm, wobei es in der Fertigung zu Abweichungen kam. Außerdem besitzt die Rakete drei trapezoide (d.h. trapezförmige) Leitwerke.
+Als Versuchsobjekt kommt in dieser Arbeit die selbst entwickelte Modellrakete "`FTV"' (Flight Test Vehicle) zum Einsatz. Insgesamt weist FTV eine Länge von ca. 68 cm auf, wobei das Körperrohr 50 cm der Länge ausmacht. Die Raketenspitzen haben in etwa eine Länge von 18 cm, wobei es in der Fertigung zu Abweichungen kam. Au"serdem besitzt die Rakete drei trapezoide (d.h. trapezförmige) Leitwerke.
 
 
 \subsubsection{Aufbau}
@@ -225,16 +193,15 @@ Der in diesem Projekt untersuchte Flugkörper \texttt{FTV} besteht aus den in \r
 \end{figure}
 
 \begin{description}
-	\item[Körperrohr] Bei dem verbautem Körperrohr handelt es sich um ein 40 mm dickes Papprohr, welches im Internetfachhandel für Modellraketenbau erworben wurde.
+	\item[Körperrohr] Die Funktion des Körperrohrs ist einfach, es stellt den Hauptkörper der Rakete dar. Bei dem Körperrohr von FTV handelt es sich um ein 40 mm dickes Papprohr, welches im Internetfachhandel erworben wurde.
 	
-	\item[Motorhalterung] Das Innenrohr der Motorhalterung ist ebenfalls ein Papprohr. Im Gegensatz zu Kunststoffen hält Pappe für die kurze Brenndauer des Raketenmotors die starke Wärmeentwicklung gut aus. Das Innenrohr ist durch Ringe aus Balsaholz im Körperrohr befestigt.
+	\item[Motorhalterung] Die Motorhalterung bietet eine mechanische Verbindung zwischen dem Raketenmotor und dem Körperrohr. Sie besteht aus einem weiteren Papprohr, in das der Raketenmotor hineinpasst. Das Innenrohr ist durch Ringe aus Balsaholz im Körperrohr befestigt.
 	
-	\item[Leitwerke] Als Werkstoff für die Leitwerke wurde 2 mm starkes Balsaholz gewählt. Sie stehen an der breitesten Stelle 32 mm vom Körperrohr ab und reichen durch Schlitze in das Körperrohr hinein.
-	
+	\item[Leitwerke] Die Leitwerke sorgen für die aerodynamische Stabilität der Rakete, da der Flugkörper ansonsten keine senkrechte Flugbahn verfolgen würde \cite{om}. Als Werkstoff für die Leitwerke wurde 2 mm starkes Balsaholz gewählt. Sie stehen an der breitesten Stelle 32 mm vom Körperrohr ab.
 	
 	\item[Spitze] Die Raketenspitzen wurden aus dem Kunststoff PLA hergestellt. Um Gewicht einzusparen, sind die Spitzen hohl.
 	
-	\item[Bergungssystem] Genutzt wird ein Fallschirm mit 50 cm Durchmesser, in Kombination mit einem Schockband aus Elastikband, wie es auch bei Kleidungsstücken zum Einsatz kommt.
+	\item[Bergungssystem] Das Bergungssystem besteht aus einem Fallschirm und dem Schockband, welches diesen mit dem Körperrohr verbindet. Es besteht aus einem elastischen Material, um die kurzzeitig gro"se Kraft beim Öffnen des Fallschirms abzufedern. Genutzt wird ein Fallschirm mit 50 cm Durchmesser, in Kombination mit einem Schockband aus Elastikband, wie es auch bei Kleidungsstücken zum Einsatz kommt.
 \end{description}
 
 
@@ -242,7 +209,7 @@ Der in diesem Projekt untersuchte Flugkörper \texttt{FTV} besteht aus den in \r
 \label{sssec-Fertigungsmethoden}
 
 \paragraph{3D-Druck}
-Die Raketenspitzen wurden mit einem handelsüblichen 3D-Drucker hergestellt, mit Schleifpapier nachbearbeitet und anschließend lackiert. Das 3d-Druck-Verfahren bietet eine kostengünstige Methode, um Körper präzise nach einem Modell zu erzeugen. Zwar entstehen durch die Nachbearbeitung Abweichungen, jedoch ist die Oberfläche ohne Bearbeitung zu rau.
+Die Raketenspitzen wurden mit einem handelsüblichen 3D-Drucker hergestellt, mit Schleifpapier nachbearbeitet und anschlie"send lackiert. Das 3d-Druck-Verfahren bietet eine kostengünstige Methode, um Körper präzise nach einem Modell zu erzeugen. Zwar entstehen durch die Nachbearbeitung Abweichungen, jedoch ist die Oberfläche ohne Bearbeitung zu rau.
 
 \paragraph{CNC-Laserschneider}
 Alle Teile aus Balsaholz wurden mit dem Laserschneider des oldenburger Hackspace \emph{Mainframe} aus Platten ausgeschnitten. Dieses Verfahren liefert sehr genaue Ergebnisse.
@@ -255,7 +222,7 @@ Die Funktion $r(x)$ gibt den Radius der Spitze für jeden Punkt entlang der Mitt
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.6\textwidth]{Bilder/Raketenspitzen.png}
+	\includegraphics[width=0.8\textwidth]{Bilder/Raketenspitzen.png}
 	\caption{Die unterschiedlichen Raketenspitzen (Eigene Grafik)}
 	\label{fig-Raketenspitzen}
 \end{figure}
@@ -290,7 +257,7 @@ $$r(x)=\frac{R}{\sqrt{\pi}} \cdot \sqrt{\varTheta-\tfrac{1}{2} \cdot \sin(2 \cdo
 \varTheta= \cos^{-1} \left( 1-\frac{2 \cdot x}{L_{S}}\right)  \ .$$
 
 \paragraph{Experimentelle Spitze}
-Die experimentelle Spitze ist eine Eigenkreation. Teile ihrer Außenwand sind nach innen geneigt, während andere Abschnitte einer elliptischen Spitze entsprechen. Sie wurde der Untersuchung hinzugefügt, da sie kein Rotationskörper ist (siehe Abb. \ref{fig-Raketenspitzen}).
+Die experimentelle Spitze ist eine Eigenkreation. Teile ihrer Au"senwand sind nach innen geneigt, während andere Abschnitte einer elliptischen Spitze entsprechen. Sie wurde der Untersuchung hinzugefügt, da sie kein Rotationskörper ist (siehe Abb. \ref{fig-Raketenspitzen}).
 
 
 \subsection{Der Windkanal TWO}
@@ -319,7 +286,7 @@ Mit Hilfe von Messwerten soll die ungefähre Flughöhe für jede Spitze ermittel
 
 Die Einflussfaktoren auf den aerodynamischen Widerstand sind anhand einfacher Experimente herleitbar. Hält man während der Fahrt eine Hand aus dem Autofenster, so wird eine spürbare Kraft durch die Luft ausgeübt. Diese Widerstandskraft wirkt auf jeden Körper, der sich durch ein Gas oder eine Flüssigkeit bewegt, da der Körper das Gas um sich verdrängen muss \cite{dlr,lp}. Ziel ist es also, die Spitzenform festzustellen, welche die Luft am effizientesten verdrängt.
 
-Die im Autoexperiment erkennbaren Einflussfaktoren sind die in den Wind gerichtete Fläche, die sich je nach Orientierung der Hand ändert, und die Geschwindigkeit. Ein weiterer Faktor kann in einem weiteren Experiment herausgefunden werden. Bewegt man seine Hand durch Wasser, fällt auf, dass eine größere Kraft aufgebracht werden muss als für die Bewegung durch Luft.
+Die im Autoexperiment erkennbaren Einflussfaktoren sind die in den Wind gerichtete Fläche, die sich je nach Orientierung der Hand ändert, und die Geschwindigkeit. Ein weiterer Faktor kann in einem weiteren Experiment herausgefunden werden. Bewegt man seine Hand durch Wasser, fällt auf, dass eine grö"sere Kraft aufgebracht werden muss als für die Bewegung durch Luft.
 
 Die Widerstandskraft hängt also von der Querschnittsfläche $A$ des Objekts, seiner Geschwindigkeit $v$ und der Dichte $\rho$ des Mediums ab. Wie Leonardo da Vinci erkannte, wirkt sich allerdings auch die Form des Objektes auf den Luftwiderstand aus \cite{hw}.
 Für die vier Einflussfaktoren gilt folgende Gleichung zur Bestimmung der Widerstandskraft $F_{W}$ \cite{lp}:
@@ -379,7 +346,7 @@ $$ s(t) = \int v(t)dt \ . $$
 
 \paragraph{Hypothesen}
 Da sich ein Ablösen der Strömung von der Spitze negativ auf die Widerstandskraft auswirkt, lassen sich die folgenden Hypothesen aufstellen: \\
-Es werden Spitzen mit und ohne knickfreien Übergang zum Körperrohr untersucht. Die Spitzen mit knickfreien Übergängen  sollten weniger Strömungsablösung verursachen als die konischen Spitze ohne. Auch bei der experimentellen Spitze sollte eine größere Ablösung der Strömung der Fall sein. Folglich ist für die konische und experimentelle Spitze ein hoher $C_{W}$-Wert zu erwarten.
+Es werden Spitzen mit und ohne knickfreien Übergang zum Körperrohr untersucht. Die Spitzen mit knickfreien Übergängen  sollten weniger Strömungsablösung verursachen als die konischen Spitze ohne. Auch bei der experimentellen Spitze sollte eine grö"sere Ablösung der Strömung der Fall sein. Folglich ist für die konische und experimentelle Spitze ein hoher $C_{W}$-Wert zu erwarten.
 
 
 \subsubsection{Versuchsaufbau und -durchführung}
@@ -418,21 +385,10 @@ Beim Auftragen der gemessenen Kraft gegen die Geschwindigkeit wird bei jeder ers
 \end{figure}
 
 \paragraph{Gemessene Kräfte}
-Das Steigungsverhalten der Kurven gleicht dem einer nach oben geöffneten Parabel (Siehe Abb. \ref{sfig-Messwerte-Fw}). Die geringste gemessene Kraft liegt bei jeder der Spitzen bei 0,02 N. $F_{W}$ ist bei der experimentellen Spitze am größten. Die anderen Graphen liegen nahe beieinander.
-
-\begin{wrapfigure}{r}{0.3\textwidth}
-	\vspace{-12pt}
-	\centering
-	\includegraphics[width=0.3\textwidth]{Bilder/Querschnittsfläche-Rakete.png}
-	\caption{die Querschnittsfläche $A$ der Rakete (eigene Grafik)}
-	\label{fig-Querschnittsfläche-Rakete}
-	\vspace{-20pt}
-\end{wrapfigure}
+Das Steigungsverhalten der Kurven gleicht dem einer nach oben geöffneten Parabel (Siehe Abb. \ref{sfig-Messwerte-Fw}). Die geringste gemessene Kraft liegt bei jeder der Spitzen bei 0,02 N. $F_{W}$ ist bei der experimentellen Spitze am grö"sten. Die anderen Graphen liegen nahe beieinander.
 
 \paragraph{Der errechnete Widerstandsbeiwert}
-Zur Berechnung der $C_{W}$-Werte wurde für die Luftdichte ${\rho} = 1,2 \text{ kgm}^{-3}$ angenommen, die Querschnittsfläche der Rakete ergibt sich aus dem Querschnitt der Leitwerke und dem der Spitze (siehe Abb.~\ref{fig-Querschnittsfläche-Rakete}).
-So ergeben sich die in Abb. \ref{sfig-Messwerte-Cw} gezeigten $C_{W}$-Werte.
-
+Zur Berechnung der $C_{W}$-Werte wurde für die Luftdichte ${\rho} = 1,2 \text{ kgm}^{-3}$ angenommen, die Querschnittsfläche der Rakete ergibt sich aus dem Querschnitt der Leitwerke und dem der Spitze und beträgt $ 0,0014486 \text{ m}^{2} $. So ergeben sich die in Abb.~\ref{sfig-Messwerte-Cw} gezeigten $C_{W}$-Werte.
 Die errechneten Widerstandsbeiwerte sind nicht konstant. Um einen konstanten Wert zu erhalten, wird aus allen $C_{W}$-Werten einer Spitze der Mittelwert gebildet (Siehe Tabelle \ref{tab-Simulationsparameter} für die $C_{w}$-Werte).
 
 Die Ogive besitzt den kleinsten aerodynamischen Widerstand, gefolgt von Ellipse und Haack-Spitze. Der Wert der konischen Spitze liegt leicht höher, ebenso liegt der der experimentelle Spitze über den der anderen. Somit verursacht die Ogive den geringsten Luftwiderstand. 
@@ -440,11 +396,11 @@ Die Ogive besitzt den kleinsten aerodynamischen Widerstand, gefolgt von Ellipse 
 
 \subsection{Flugsimulation}
 
-Das in \ref{sssec-Numerische-Annäherung} beschriebene numerischen Verfahren wurde in der freien Numerik-Software \emph{GNU Octave} umgesetzt. Die Simulation wurde jeweils zweimal durchgeführt, einmal unter Berücksichtigung der Massenunterschiede der Spitzen und einmal mit $m = 0,12 \text{ kg}$, um nur die Spitzenform vergleichen zu können.
+Das in \ref{sssec-Numerische-Annäherung} beschriebene numerischen Verfahren wurde in der freien Numerik-Software \emph{GNU Octave} umgesetzt. Die Simulation wurde einmal unter Berücksichtigung der Massenunterschiede der Spitzen und einmal mit $m = 0,12 \text{ kg}$, um nur die Spitzenform vergleichen zu können. Der Flug wurde mit den Motoren \textsf{D9-7} und \textsf{C6-5} simuliert.
 
-\begin{table}[h]
+\begin{table}[H]
 \caption{Parameter für die Flugsimulation}
-\begin{subtable}[l]{.49\textwidth}
+\begin{subtable}[b]{.49\textwidth}
 	\subcaption{Parameter unabhängig der Spitze}
 	\begin{tabular}{r|l}
 	\toprule
@@ -452,8 +408,8 @@ Das in \ref{sssec-Numerische-Annäherung} beschriebene numerischen Verfahren wur
 	\midrule
 	$\rho$ 		& $1,2 \text{ kgm}^{-3}$ \\
 	$m$			& $0,12 \text{ kg}$ \\
-	$F_{Schub}$	& $9 \text{ N}$ \\
-	Schubdauer	& $2,1 \text{ s}$ \\
+%	$F_{Schub}$	& $9 \text{ N}$ \\
+%	Schubdauer	& $2,1 \text{ s}$ \\
 	$t_{n+1}-t_{n}$ & $10^{-3} \text{ s}$ \\
 	\bottomrule
 	\end{tabular}
@@ -475,73 +431,84 @@ Das in \ref{sssec-Numerische-Annäherung} beschriebene numerischen Verfahren wur
 \end{subtable}
 \end{table}
 
-\begin{figure}
+\begin{figure}[h]
 \begin{subfigure}[l]{0.49\textwidth}
 	\centering
-	\includegraphics[width=\textwidth]{Bilder/Flugsimulation.png}
-	\caption{Flugsimulation von FTV mit ogiver Spitze}
-	\label{sfig-Flugsimulation}
+	\includegraphics[width=\textwidth]{Bilder/Flugsimulation-D9-7.png}
+	\caption{Flugsimulation mit \textsf{D9-7}}
+	\label{sfig-Flugsimulation-D9-7}
 \end{subfigure}
 \begin{subfigure}[r]{0.49\textwidth}
 	\centering
-	\includegraphics[width=\textwidth]{Bilder/Simulierte-Flughöhe.png}
-	\caption{In der Simulation erreichte Flughöhe}
-	\label{sfig-Simulierte-Flughöhe}
+	\includegraphics[width=\textwidth]{Bilder/Flugsimulation-C6-5.png}
+	\caption{Flugsimulation mit \textsf{C6-5}}
+	\label{sfig-Flugsimulation-C6-5}
 \end{subfigure}
 \caption{Ergebnisse der Flugsimulation}
 \end{figure}
 
 \noindent
-Die Ergebnisse in Abb. \ref{sfig-Flugsimulation} geben die Flugphasen einer Modellrakete wieder (siehe \ref{sssec-Flug-einer-Modellrakete}). Bei Betrachtung der Flughöhen mit gleicher angenommener Masse (Abb. \ref{sfig-Simulierte-Flughöhe}) findet sich die selbe Reihenfolge wie bei den $C_{W}$-Werten wieder, die Spitze mit geringstem $C_{W}$ fliegt am höchsten. Unter Berücksichtigung der Masse ändert sich die Reihenfolge, so schneidet die konische Spitze durch ihre geringe Masse besser ab, als die Haack- und elliptische Spitze. Die Ogive schneidet in beiden Fällen am besten ab. Somit ist sie sowohl für die Rakete FTV am besten, als auch ihre Form an sich. 
+Ohne Berücksichtigung der Massenunterschiede zeigt sich die selbe Reihenfolge wie in Abb. \ref{sfig-Messwerte-Cw}. Unter Berücksichtigung der Massenunterschiede ändert sich die Reihenfolge, wobei die Spitzen mit geringerer Masse besser abschneiden. Die Unterschiede fallen mit dem kleineren \textsf{C6-5}-Motor deutlich gravierender aus (siehe Abb. \ref{sfig-Flugsimulation-C6-5} und \ref{sfig-Flugsimulation-D9-7}). Dies ist auf die geringere Geschwindigkeit der Rakete zurückzuführen. Da der Luftwiderstand überproportional zur Geschwindigkeit wächst nimmt der Einfluss der Form der Spitze bei größeren Geschwindigkeiten zu.
 
+
+\begin{wrapfigure}{l}{0.18\textwidth}
+	\vspace{-12pt}
+	\includegraphics[width=0.18\textwidth]{Bilder/Flugversuch-Start.jpg}
+	\vspace{-160pt}
+\end{wrapfigure}
 
 \subsection{Flugversuch}\label{ssec-Flugversuch-Luftwiderstand}
 
-Der Jungfernflug von FTV fand am 10.01.2019 auf einer großen Wiese in der Nähe von Oldenburg statt, bei fast absoluter Windstille. Zum Einsatz kam ein Raketenmotor vom Typ \textsf{D9-7} und eine Startrampe mit einem ca. $1 \text{ m}$ langen Leitstab.
+Der Jungfernflug von FTV fand am 10.01.2019 auf einer Wiese in der Nähe von Oldenburg statt. Bis jetzt hat FTV 6 Flüge absolviert, wobei Treibsätze der Spezifikationen \textsf{B4-4}, \textsf{C6-5}, und \textsf{D9-7} verwendet wurden.
 
-\paragraph{Ablauf}
-Wie erwartet steigt FTV nach dem Start fast senkrecht auf. Kurz nach beenden der Beschleunigungsphase geht der Sichtkontakt zur Rakete verloren, da diese anscheinend in ein Nebelfeld eintritt. Nach mehreren Minuten wird die Suche nach dem Modell begonnen, zunächst jedoch erfolglos. Nach einiger Zeit wird die Spitze der Rakete einzeln wiedergefunden, die Rakete selbst wird erst nach mehr als einer Stunde einige hundert Meter weit vom Startplatz entfernt wiedergefunden. 
-
-\begin{wrapfigure}{r}{0.35\textwidth}
-	\vspace{-10pt}
-	\includegraphics[width=0.35\textwidth]{Bilder/Höhenmessung.png}
-	\caption{Höhenmessung (eigene Abb.)}
-	\vspace{-10pt}
-\end{wrapfigure}
-
-\paragraph{Beschädigung der Rakete}
-Auch wenn das Bergungssystem ausgelöst hat wurden zwei Teile beschädigt: Der Faden zwischen Spitze und Körperrohr ist gerissen und ein Kleinteil der Motorhalterung hat sich gelöst, welches verhindert, dass der Motor hinten aus der Rakete fällt. Dies ist anscheinend passiert, denn der Motor wurde nicht wiedergefunden. 
+Bei den Flugversuchen kam es mehrmals zu Fehlfunktionen des Bergungssystems, wobei die Verbindungen zwischen Körperrohr, Spitze und Fallschirm mehrfach gerissen sind. Dies konnte auf einen Haken aus Draht zurückgeführt werden. FTV wurde dabei nicht nennenswert beschädigt.
 
 \paragraph{Höhenmessung}
-Die Flughöhe sollte durch Anpeilen der Rakete und eine trigonometrische Berechnung ermittelt werden. Da der Sichtkontakt zur Rakete verloren wurde, konnten leider keine Daten aufgenommen werden. 
+Die Rakete wird von zwei Seiten senkrecht zur Windrichtung angepeilt. Dadurch kann anhand der Winkel, unter denen die Rakete angepeilt wurde, kann die Flughöhe bestimmt werden. Für die Auswertung wurde die Geometrie-Software \textit{GeoGebra} eingesetzt. Für die Flüge mit Höhenmessung wurden \textsf{C6-5}-Treibsätze verwendet.
 
-\[ h = \tan \alpha \cdot l\]
+\begin{figure}[H]
+	\vspace{-5pt}
+	\centering
+	\includegraphics[width=0.4\textwidth]{Bilder/Höhenmessung.png}
+	\caption{Schematische Darstellung der Höhenmessung}
+	\vspace{-5pt}
+\end{figure}
+
+\noindent
+Diese Methode liefert genauere Ergebnisse, als die Rakete von nur einer Seite anzupeilen, da die Höhe nicht nur entlang einer Geraden genau bestimmt werden kann, sondern in einer Ebene. 
 
 
 \subsection{Diskussion}
 
 Da im Flugversuch keine Daten aufgenommen werden konnten, wird für einen realistischen Vergleich die frei Simulations-Software \emph{OpenRocket} eingesetzt. Die Genauigkeit dieser Simulation liegt bei ca. $15 \%$ \cite{sn}. Die Experimentelle Spitze kann mit OpenRocket nicht simuliert werden.
 
-\begin{table}
-\caption{Die Eigenen Simulationsergebnisse mit tatsächlicher Masse im Vergleich mit OpenRocket}
-\label{tab-Simulationsvergleich}
-\centering
-\begin{tabular}{r|l|ll}
-	\toprule
-	\textbf{Spitze} & \multicolumn{3}{c}{\textbf{Erreichte Flughöhe [m]}} \\ \cmidrule{2-4}
-	& Eigene Simulation	& OpenRocket	& OpenRocket +15 \%	\\
-	\midrule
-	Ogive		& 574				& 368			& 423 \\
-	Ellipse		& 532				& 357			& 411 \\
-	Haack		& 543				& 366			& 421 \\
-	Konisch		& 548				& 367			& 422 \\
-	\bottomrule
-\end{tabular}
-\end{table}
+%\begin{table}[h]
+%\caption{Die Eigenen Simulationsergebnisse mit tatsächlicher Masse im Vergleich mit OpenRocket}
+%\label{tab-Simulationsvergleich}
+%\centering
+%\begin{tabular}{r|l|ll}
+%	\toprule
+%	\textbf{Spitze} & \multicolumn{3}{c}{\textbf{Erreichte Flughöhe [m]}} \\ \cmidrule{2-4}
+%	& Eigene Simulation	& OpenRocket	& OpenRocket +15 \%	\\
+%	\midrule
+%	Ogive		& 574				& 368			& 423 \\
+%	Ellipse		& 532				& 357			& 411 \\
+%	Haack		& 543				& 366			& 421 \\
+%	Konisch		& 548				& 367			& 422 \\
+%	\bottomrule
+%\end{tabular}
+%\end{table}
 
-In Tabelle \ref{tab-Simulationsvergleich} wird eine deutliche Abweichung zwischen der eigenen Simulation und der durch OpenRocket deutlich. Selbst nach Addition der Ungenauigkeit von OpenRocket fällt die Flughöhe in der eigenen Simulation mit allen Spitzen über $100 \text{ m}$ größer aus. Für diese Abweichungen gibt es verschiedene Gründe. Nicht berücksichtigt wird die Massenabnahme, welche sich durch das Verbrennen der Treibladung ergibt. Außerdem nehmen die Werte von $\rho$ und $F_{G}$ mit größerer Höhe ab, was unser Modell ebenfalls nicht berücksichtigt. Auch für $F_{Schub}$ wurde lediglich der Mittelwert über die Schubdauer eingesetzt.
+\begin{figure}
+	\centering
+	\includegraphics[width=0.75\textwidth]{Bilder/Flughöhen-Vergleich.png}
+	\caption{Simulierte Flughöhen und Flugversuch im Vergleich}
+	\label{fig-Simulationsvergleich}
+\end{figure}
 
-Der größte Fehler kommt jedoch vermutlich durch die eindimensionale Darstellung zustande. Die Rakete zeigt im Modell immer genau in Flugrichtung. Daher wird an jeder Stelle die kleinstmögliche Widerstandskraft angenommen, was der Theorie nach zu einer maximalen, aber in keiner Weise realistischen Flughöhe führt. 
+In Tabelle \ref{fig-Simulationsvergleich} wird eine deutliche Abweichung zwischen der eigenen Simulation und der durch OpenRocket deutlich. Selbst nach Addition der Ungenauigkeit von OpenRocket fällt die Flughöhe in der eigenen Simulation mit allen Spitzen über $100 \text{ m}$ grö"ser aus. Für diese Abweichungen gibt es verschiedene Gründe. Nicht berücksichtigt wird die Massenabnahme, welche sich durch das Verbrennen der Treibladung ergibt. Au"serdem nehmen die Werte von $\rho$ und $F_{G}$ mit grö"serer Höhe ab, was unser Modell ebenfalls nicht berücksichtigt. Auch für $F_{Schub}$ wurde lediglich der Mittelwert über die Schubdauer eingesetzt.
+
+Der grö"ste Fehler kommt jedoch vermutlich durch die eindimensionale Darstellung zustande. Die Rakete zeigt im Modell immer genau in Flugrichtung. Daher wird an jeder Stelle die kleinstmögliche Widerstandskraft angenommen, was der Theorie nach zu einer maximalen, aber in keiner Weise realistischen Flughöhe führt. 
 
 Des weiteren können auch Messungenauigkeiten als Fehlerquelle eine Rolle spielen. Insbesondere durch die sehr kleinen gemessenen Kräfte sinkt die Genauigkeit der Kraftmessung. Die Fertigung der Spitzen ist auch eine Fehlerquelle, da Abweichungen von der theoretischen Form der Spitzen entstehen (siehe \ref{sssec-Fertigungsmethoden}).
 
@@ -574,20 +541,20 @@ Damit Raketen auf ihrer Flugbahn bleiben, müssen sie stabilisiert werden \cite{
 \caption{Drehbewegung einer Modellrakete}
 \end{figure}
 
-Die Drehbewegung einer Rakete kann in Nicken, Gieren und Rollen eingeteilt werden. Dabei heißt die Bewegung um die Längsachse Rollen, die Nick- und Gierachse sind orthogonal zur Längsachse und zueinander (siehe Abb. \ref{sfig-Freihetsgrade}). Eine Unterscheidung zwischen Nicken und Gieren ist bei Raketen schwierig, da es keine geometrischen Unterschiede zwischen Nicken und Gieren gibt \cite{AbR}.
+Die Drehbewegung einer Rakete kann in Nicken, Gieren und Rollen eingeteilt werden. Dabei hei"st die Bewegung um die Längsachse Rollen, die Nick- und Gierachse sind orthogonal zur Längsachse und zueinander (siehe Abb. \ref{sfig-Freihetsgrade}). Eine Unterscheidung zwischen Nicken und Gieren ist bei Raketen schwierig, da es keine geometrischen Unterschiede zwischen Nicken und Gieren gibt \cite{AbR}.
 
 \paragraph{Stabilisierung der Bewegung}
 Damit eine Rakete möglichst hoch fliegt und keine Gefahr für Personen darstellt, sollte sie senkrecht hoch fliegen. Um dies zu erreichen, muss die Bewegung der Rakete stabilisiert werden, wobei die Rollbewegung irrelevant ist.
 
 Die Stabilität der Rakete hängt von der Lage des \textit{Schwerpunktes} (SP) und des \textit{Druckpunktes} (DP) ab (siehe Abb. \ref{sfig-Lage-DP-SP}) \cite{AbR}. Der Schwerpunkt ist der  Drehpunkt der Rakete, im Druckpunkt setzt die aerodynamische Widerstandskraft $ \vv{F_{W}} $ \cite{AbR} an.
 Damit eine Rakete aerodynamisch stabil ist, muss der Druckpunkt hinter dem Schwerpunkt liegen \cite{AbR,om}. Wenn die Rakete von ihrem Kurs abweicht, dann ist der \textit{Angriffswinkel} $\alpha \neq 0$. Das liegt an der Trägheit der Rakete, sie dreht sich, die Flugrichtung folgt erst später. Die Widerstandskraft $\vv{F_{W}}$ besitzt eine Komponenten $F_{n}$, die senkrecht zur Längsachse ist und ein Drehmoment auf die Rakete ausübt. Liegt der DP hinter dem SP, dann korrigiert dieses Drehmoment die Schieflage der Rakete.
-Als Maß der Stabilität einer Rakete wird häufig die sog. \textit{Kaliberzahl} \texttt{Kal} herangezogen \cite{AbR,dl,om,sn}. Diese gibt den Abstand zwischen DP und SP als Vielfaches des Raketendurchmessers $D$ an:
+Als Ma"s der Stabilität einer Rakete wird häufig die sog. \textit{Kaliberzahl} \texttt{Kal} herangezogen \cite{AbR,dl,om,sn}. Diese gibt den Abstand zwischen DP und SP als Vielfaches des Raketendurchmessers $D$ an:
 \begin{equation}
 \mathtt{Kal} = \frac{x_{SP}-x_{DP}}{D} \ .
 \end{equation}
 
 \noindent
-Dabei sind $x_{SP}$ und $x_{DP}$ die Strecken von der Unterkante der Rakete zum SP bzw. DP. Liegt \texttt{Kal} zwischen $1$ und $2,5$, kann ein stabiles Flugverhalten angenommen werden. Ist der Wert zu klein oder zu groß, dann ist die Rakete nicht ausreichend stabil oder reagiert zu stark auf äußere Störungen \cite{om}.
+Dabei sind $x_{SP}$ und $x_{DP}$ die Strecken von der Unterkante der Rakete zum SP bzw. DP. Liegt \texttt{Kal} zwischen $1$ und $2,5$, kann ein stabiles Flugverhalten angenommen werden. Ist der Wert zu klein oder zu gro"s, dann ist die Rakete nicht ausreichend stabil oder reagiert zu stark auf äu"sere Störungen \cite{om}.
 
 Um vorauszusagen, ob eine Rakete stabil fliegt oder nicht, muss die Lage beider Punkte bekannt sein. Während sich die Position des SP leicht experimentell bestimmen lässt, ist die Position des DP nur schwierig durch einen Versuch festzustellen. Deshalb soll die Lage vom DP theoretisch bestimmt werden.
 
@@ -604,7 +571,7 @@ Voraussetzung für die theoretische Vorhersage des DP sind \cite{sn}:
 	\item Der Angriffswinkel $ \alpha $ (siehe Abb. \ref{sfig-Lage-DP-SP}) ist nahe Null.
 	\item Der Luftstrom um die Rakete ist laminar.
 	\item Die Raketenspitze läuft spitz zu.
-	\item Die Leitwerke sind flach.
+%	\item Die Leitwerke sind flach.
 	\item Die Rakete ist achsensymmetrisch.
 \end{enumerate}
 
@@ -823,9 +790,9 @@ Nachdem die Druck- und Schwerpunkte mit allen unterschiedlichen Raketenspitzen b
 \end{table}
 
 \noindent
-Für alle Werte \texttt{Kal} gilt die schon in \ref{ssec-Theoretische-Btrachtung-Flugstabilität} genannte Faustregel $1 < \mathtt{Kal} < 2,5$. Darüber hinaus befinden sich alle Werte nicht knapp an den Grenzen, somit können für FTV gute Eigenschaften in Bezug auf die Stabilität angenommen werden. Da für \texttt{Kal} keine "`Je-größer-desto-besser-Beziehung"' gilt, kann hier für FTV kein Urteil darüber gefällt werden, welche Spitze am besten geeignet ist.
+Für alle Werte \texttt{Kal} gilt die schon in \ref{ssec-Theoretische-Btrachtung-Flugstabilität} genannte Faustregel $1 < \mathtt{Kal} < 2,5$. Darüber hinaus befinden sich alle Werte nicht knapp an den Grenzen, somit können für FTV gute Eigenschaften in Bezug auf die Stabilität angenommen werden. Da für \texttt{Kal} keine "`Je-grö"ser-desto-besser-Beziehung"' gilt, kann hier für FTV kein Urteil darüber gefällt werden, welche Spitze am besten geeignet ist.
 
-Allgemein lässt sich jedoch eine Empfehlung aussprechen, da es bei anderen Raketen durchaus vorkommt, dass die Kalliberzahl zu groß oder zu klein ist. In solchen Fällen kann durch die Wahl der Spitze eine Verbesserung der Flugstabilität erzielt werden. Somit gibt es keine beste Spitze, sondern für unterschiedliche Fälle geeignete Raketenspitzen. 
+Allgemein lässt sich jedoch eine Empfehlung aussprechen, da es bei anderen Raketen durchaus vorkommt, dass die Kalliberzahl zu gro"s oder zu klein ist. In solchen Fällen kann durch die Wahl der Spitze eine Verbesserung der Flugstabilität erzielt werden. Somit gibt es keine beste Spitze, sondern für unterschiedliche Fälle geeignete Raketenspitzen. 
 
 
 \subsection{Versuch im Windkanal}
@@ -878,20 +845,20 @@ Verhalten der Rakete in \texttt{pos2}:
 	\item[Konische Spitze] Mit dieser Spitze gibt es \texttt{pos2} nicht. Es gibt keine Position, aus der sich die Rakete quer zum Wind ausrichtet.
 	
 	\item[Experimentelle Spitze] FTV mit der experimentellen Spitze verhält sich in Bezug auf \texttt{pos2} ähnlich wie die elliptische Spitze. Jedoch macht es hier einen Unterschied, wie die Spitze auf der Rakete steckt. Zeigt die Spitze mit ihrer schmalen Seite zum Luftstrom, pendelt die Rakete in \texttt{pos2} ein wenig hin und her, ohne dass sie sich in einer Position stabilisiert.
-	Zeigt die größtmögliche Fläche zum Luftstrom, lässt sich kein Unterschied zur elliptischen Spitze feststellen.	
+	Zeigt die grö"stmögliche Fläche zum Luftstrom, lässt sich kein Unterschied zur elliptischen Spitze feststellen.	
 \end{description}
 
 \noindent
 Allen Spitzen ist gemeinsam, dass die Rakete sich erst ab einem Angriffswinkel von über 45 Grad in \texttt{pos2} ausrichtet.
 
-Bei der Stichprobe mit unterschiedlichen Windgeschwindigkeiten konnte im Verhalten der Rakete mit Haack-Spitze kein Unterschied festgestellt werden. Lediglich die Zeit, die vergeht, bis sich die Rakete wieder in eine Position eingependelt, wird mit größerer Windgeschwindigkeit kürzer.
+Bei der Stichprobe mit unterschiedlichen Windgeschwindigkeiten konnte im Verhalten der Rakete mit Haack-Spitze kein Unterschied festgestellt werden. Lediglich die Zeit, die vergeht, bis sich die Rakete wieder in eine Position eingependelt, wird mit grö"serer Windgeschwindigkeit kürzer.
 
 \paragraph{Auswertung}
-Das unterschiedliche Verhalten der Raketenspitzen in \texttt{pos2} lässt sich durch die unterschiedlichen Flächen, die zum Luftstrom zeigen, erklären: Die elliptische Spitze ist die bauchigste der Spitzen, somit zeigt bei ihr in \texttt{pos2} die größte Fläche zum Wind. 
+Das unterschiedliche Verhalten der Raketenspitzen in \texttt{pos2} lässt sich durch die unterschiedlichen Flächen, die zum Luftstrom zeigen, erklären: Die elliptische Spitze ist die bauchigste der Spitzen, somit zeigt bei ihr in \texttt{pos2} die grö"ste Fläche zum Wind. 
 Die konische Spitze ist die schlankeste Raketenspitze. Der Luftwiderstand in \texttt{pos2} reicht nicht aus, um ein Kräftegleichgewicht mit dem Luftwiderstand der Leitwerke aufzubauen.
 Das Schaukeln der experimentellen Spitze hingegen ist jedoch nur schwierig zu erklären. Denkbar wären zum Beispiel Auswirkungen von durch die Form der Spitze verursachten Turbulenzen.
 
-Das Vorhandensein der stabilen Position \texttt{pos2} erscheint zunächst bedenklich, wenn man sich vorstellt, dass sich die Rakete im Flug nach dieser Position ausrichtet. Dass im Flug einer Rakete mit ausreichender Stabilität in \texttt{pos1} ein so großer Angriffswinkel auftritt, ist jedoch sehr unwahrscheinlich. So gesehen konnte also die Flugstabilität von FTV experimentell bestätigt werden.
+Das Vorhandensein der stabilen Position \texttt{pos2} erscheint zunächst bedenklich, wenn man sich vorstellt, dass sich die Rakete im Flug nach dieser Position ausrichtet. Dass im Flug einer Rakete mit ausreichender Stabilität in \texttt{pos1} ein so gro"ser Angriffswinkel auftritt, ist jedoch sehr unwahrscheinlich. So gesehen konnte also die Flugstabilität von FTV experimentell bestätigt werden.
 
 
 \subsection{Flugversuch}
@@ -903,7 +870,7 @@ Die Flugstabilität von FTV konnte durch im Flug erneut bestätigt werden, da ei
 
 Zunächst liegt ein Widerspruch in der theoretischen Betrachtung der Flugstabilität von FTV und dem Versuch im Windkanal.
 
-An diesem Widerspruch lassen sich die Grenzen der hier beschriebenen Methode zur Berechnung des Druckpunktes feststellen. \texttt{pos2} tritt nur bei großen Angriffswinkeln auf, die theoretische Methode setzt jedoch Angriffswinkel nahe null voraus. So gesehen liegt \texttt{pos2} lediglich außerhalb des Geltungsbereiches der theoretischen Betrachtung. Der Flugversuch und das stabile Verhalten in \texttt{pos1} im Windkanal belegen die vorhergesagte Flugstabilität.
+An diesem Widerspruch lassen sich die Grenzen der hier beschriebenen Methode zur Berechnung des Druckpunktes feststellen. \texttt{pos2} tritt nur bei gro"sen Angriffswinkeln auf, die theoretische Methode setzt jedoch Angriffswinkel nahe null voraus. So gesehen liegt \texttt{pos2} lediglich au"serhalb des Geltungsbereiches der theoretischen Betrachtung. Der Flugversuch und das stabile Verhalten in \texttt{pos1} im Windkanal belegen die vorhergesagte Flugstabilität.
 
 
 
@@ -915,7 +882,7 @@ Es wurde bestätigt, dass die Form der Raketenspitze sowohl Einfluss auf den Luf
 In Bezug auf die Flughöhe ist die ogive Spitze die optimale, da sie den geringsten Luftwiderstand und ein geringes Gewicht bietet.
 In Bezug auf die Flugstabilität hängt die Wahl der optimalen Spitze vom jeweiligen Raketenmodell ab. Eine meist zu geringe Kaliberzahl ist ein gängiges Problem im Modellraketenbau. Die Wahl der Form der Raketenspitze bietet eine Möglichkeit, die Lage des Druckpunktes zu beeinflussen. Der Wechsel der Raketenspitze ist somit ein Werkzeug zum Beheben von Stabilitätsproblemen.
 
-Es kommt im Modellraketenbau jedoch nicht nur auf große Flughöhen an. Auch Faktoren wie die Ästhetik der Rakete spielen eine nicht zu unterschätzende Rolle. So gibt es im Modellraketenbau, wie in fast allen Modellbaudisziplinen, auch originalgetreue Nachbauten von größeren Raketen \cite{om}. Bei solchen Modellen steht die Flughöhe natürlich nicht an erster Stelle.
+Es kommt im Modellraketenbau jedoch nicht nur auf gro"se Flughöhen an. Auch Faktoren wie die Ästhetik der Rakete spielen eine nicht zu unterschätzende Rolle. So gibt es im Modellraketenbau, wie in fast allen Modellbaudisziplinen, auch originalgetreue Nachbauten von grö"seren Raketen \cite{om}. Bei solchen Modellen steht die Flughöhe natürlich nicht an erster Stelle.
 Somit bleibt die Wahl der besten Raketenspitze persönliche Präferenz. Eine einheitliches Ziel des Modellraketenbaus gibt es nicht. Für Modellraketenbauer, deren Faszination für ihr Hobby vom Reiz der Geschwindigkeit und dem Optimieren der Modelle bis ins letzte Detail geprägt ist, sollten die gewonnenen Erkenntnisse jedoch eine nützliche Wissenserweiterung darstellen.
 
 \paragraph{Ausblick}
@@ -930,7 +897,7 @@ Unabhängig vom Modellraketenbau können mit den entwickelten Methoden auch viel
 %--------------------------------------------------------------------------------------------------
 \section{Danksagung an Unterstützer}
 
-Freundlicherweise durften wir für dieses Projekt den Windkanal TWO der Carl von Ossietzky Universität Oldenburg nutzen. Unser Dank geht deshalb an die Universität und in besonderer Weise an unsere Ansprechpartnerin Ingrid Neunaber, die dies ermöglicht hat.
+Freundlicherweise durften wir für dieses Projekt den Windkanal TWO der Carl von Ossietzky Universität Oldenburg nutzen. Unser Dank geht deshalb an die Universität und in besonderer Weise an unsere Ansprechpartnerin Ingrid Neunaber, die dies ermöglicht hat. Des weiteren möchten wir uns bei Familie Wilken bedanken, auf deren Wiese wir die Flugversuche durchführen durften.
 
 %Bei der folgenden Tabelle handelt es sich um eine Übersicht über die verwendeten Formelzeichen und Abkürzungen. Da dieses Dokument zu lang für die Teilnahme an "Jugend Forscht" gewesen wär, ist sie im finalen Dokument nicht enthalten.
 
@@ -1035,7 +1002,7 @@ Freundlicherweise durften wir für dieses Projekt den Windkanal TWO der Carl von
 	Leifi Physik: Luftreibung.\\ \url{https://www.leifiphysik.de/mechanik/reibung-und-fortbewegung/luftreibung} (09.01.2019;~10:58)
 	
 	\bibitem{fs}
-	Meyer, L./ Gramm, A./ Benecke, K. und weitere (2012): Das große Tafelwerk. interaktiv 2.0. Niedersachsen. Berlin. 
+	Meyer, L./ Gramm, A./ Benecke, K. und weitere (2012): Das gro"se Tafelwerk. interaktiv 2.0. Niedersachsen. Berlin. 
 	
 	\bibitem{hm}
 	Mielke, Heinz (1967): Meyers Taschenlexikon Raketentechnik Raumfahrt. Leipzig. 

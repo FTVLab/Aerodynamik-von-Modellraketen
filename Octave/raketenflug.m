@@ -7,15 +7,15 @@ s_max = -1;
 
 %Parameter für die Berechnung
 A = 0.0014486 %m^2
-F_Schub = 9 %N
+F_Schub = 6 %N
 m = 0.12 %kg
 rho = 1.2 %kg/m^3
 g = 9.81 %s/m^2
 
 %Die gemessenen C_w-Werte
-%C_w = 0.20164856 %konisch
+C_w = 0.201805961 %konisch
 %C_w = 0.186535648 %ellipsoid
-C_w = 0.170981811 %ogiv
+%C_w = 0.170981811 %ogiv
 %C_w = 0.189116315 %Haack
 %C_w = 0.268958542 %experimentell
 
@@ -41,7 +41,7 @@ a(n+1) = (v(n+1)-v(n)) /delta;
 s(n+1) = v(n+1) *delta + s(n);
 
 %Setze Schubkraft auf null
-if(t(n+1) >= 2.1)
+if(t(n+1) >= 1.6)
 F_Schub = 0;
 endif
 
