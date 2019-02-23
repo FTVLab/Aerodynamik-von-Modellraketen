@@ -217,16 +217,16 @@ Alle Teile aus Balsaholz wurden mit dem Laserschneider des oldenburger Hackspace
 
 \subsubsection{Die Raketenspitzen}
 \label{sssec-Reketenspitzen}
+
 Für diese Arbeit wurden fünf Raketenspitzen angefertigt, um diese auf ihre aerodynamischen Eigenschaften zu untersuchen. Damit ein Vergleich möglich ist, weisen alle in etwa die selbe Länge auf.
 Die Funktion $r(x)$ gibt den Radius der Spitze für jeden Punkt entlang der Mittelachse der Spitze an, wobei die Stelle $x=0$ dem spitzen Ende entspricht. Alle Funktionen $r(x)$ stammen aus \cite{sn}.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[width=0.8\textwidth]{Bilder/Raketenspitzen.png}
+	\includegraphics[width=0.6\textwidth]{Bilder/Raketenspitzen.png}
 	\caption{Die unterschiedlichen Raketenspitzen (Eigene Grafik)}
 	\label{fig-Raketenspitzen}
 \end{figure}
-
 
 \paragraph{Konische Spitze}
 
@@ -448,7 +448,7 @@ Das in \ref{sssec-Numerische-Annäherung} beschriebene numerischen Verfahren wur
 \end{figure}
 
 \noindent
-Ohne Berücksichtigung der Massenunterschiede zeigt sich die selbe Reihenfolge wie in Abb. \ref{sfig-Messwerte-Cw}. Unter Berücksichtigung der Massenunterschiede ändert sich die Reihenfolge, wobei die Spitzen mit geringerer Masse besser abschneiden. Die Unterschiede fallen mit dem kleineren \textsf{C6-5}-Motor deutlich gravierender aus (siehe Abb. \ref{sfig-Flugsimulation-C6-5} und \ref{sfig-Flugsimulation-D9-7}). Dies ist auf die geringere Geschwindigkeit der Rakete zurückzuführen. Da der Luftwiderstand überproportional zur Geschwindigkeit wächst nimmt der Einfluss der Form der Spitze bei größeren Geschwindigkeiten zu.
+Ohne Berücksichtigung der Massenunterschiede zeigt sich die selbe Reihenfolge wie in Abb. \ref{sfig-Messwerte-Cw}. Unter Berücksichtigung der Massenunterschiede ändert sich die Reihenfolge, wobei die Spitzen mit geringerer Masse besser abschneiden. Die Unterschiede fallen mit dem kleineren \textsf{C6-5}-Motor deutlich gravierender aus (siehe Abb. \ref{sfig-Flugsimulation-C6-5} und \ref{sfig-Flugsimulation-D9-7}). Dies ist auf die geringere Geschwindigkeit der Rakete zurückzuführen. Da der Luftwiderstand überproportional zur Geschwindigkeit wächst nimmt der Einfluss der Form der Spitze bei grö"seren Geschwindigkeiten zu.
 
 
 \begin{wrapfigure}{l}{0.18\textwidth}
@@ -477,38 +477,60 @@ Die Rakete wird von zwei Seiten senkrecht zur Windrichtung angepeilt. Dadurch ka
 \noindent
 Diese Methode liefert genauere Ergebnisse, als die Rakete von nur einer Seite anzupeilen, da die Höhe nicht nur entlang einer Geraden genau bestimmt werden kann, sondern in einer Ebene. 
 
+Zum jetzigen Zeitpunkt wurden noch nicht für alle Spitzen Messwerte aufgenommen. Das liegt daran, dass für einen Flugversuch annähernd Windstille benötigt wird. Zusätzlich wird relativ viel Zeit beansprucht, sodass am letzten Starttermin lediglich drei Flüge stattfinden konnten.
+
 
 \subsection{Diskussion}
 
-Da im Flugversuch keine Daten aufgenommen werden konnten, wird für einen realistischen Vergleich die frei Simulations-Software \emph{OpenRocket} eingesetzt. Die Genauigkeit dieser Simulation liegt bei ca. $15 \%$ \cite{sn}. Die Experimentelle Spitze kann mit OpenRocket nicht simuliert werden.
-
-%\begin{table}[h]
-%\caption{Die Eigenen Simulationsergebnisse mit tatsächlicher Masse im Vergleich mit OpenRocket}
-%\label{tab-Simulationsvergleich}
-%\centering
-%\begin{tabular}{r|l|ll}
-%	\toprule
-%	\textbf{Spitze} & \multicolumn{3}{c}{\textbf{Erreichte Flughöhe [m]}} \\ \cmidrule{2-4}
-%	& Eigene Simulation	& OpenRocket	& OpenRocket +15 \%	\\
-%	\midrule
-%	Ogive		& 574				& 368			& 423 \\
-%	Ellipse		& 532				& 357			& 411 \\
-%	Haack		& 543				& 366			& 421 \\
-%	Konisch		& 548				& 367			& 422 \\
-%	\bottomrule
-%\end{tabular}
-%\end{table}
-
-\begin{figure}
+\begin{figure}[h]
 	\centering
 	\includegraphics[width=0.75\textwidth]{Bilder/Flughöhen-Vergleich.png}
 	\caption{Simulierte Flughöhen und Flugversuch im Vergleich}
 	\label{fig-Simulationsvergleich}
 \end{figure}
 
-In Tabelle \ref{fig-Simulationsvergleich} wird eine deutliche Abweichung zwischen der eigenen Simulation und der durch OpenRocket deutlich. Selbst nach Addition der Ungenauigkeit von OpenRocket fällt die Flughöhe in der eigenen Simulation mit allen Spitzen über $100 \text{ m}$ grö"ser aus. Für diese Abweichungen gibt es verschiedene Gründe. Nicht berücksichtigt wird die Massenabnahme, welche sich durch das Verbrennen der Treibladung ergibt. Au"serdem nehmen die Werte von $\rho$ und $F_{G}$ mit grö"serer Höhe ab, was unser Modell ebenfalls nicht berücksichtigt. Auch für $F_{Schub}$ wurde lediglich der Mittelwert über die Schubdauer eingesetzt.
+\noindent
+Da im Flugversuch nicht für alle Spitzen Daten aufgenommen werden konnten, wird für einen realistischen Vergleich mit allen Spitzen die freie Simulations-Software \emph{OpenRocket} eingesetzt. Nach eigenen Angeben liegt die Genauigkeit dieser Simulation bei ca. $15 \%$ \cite{sn}, verglichen mit den Daten aus unserem Flugversuch ist die Abweichung noch geringer. Die Experimentelle Spitze kann mit OpenRocket nicht simuliert werden.
 
-Der grö"ste Fehler kommt jedoch vermutlich durch die eindimensionale Darstellung zustande. Die Rakete zeigt im Modell immer genau in Flugrichtung. Daher wird an jeder Stelle die kleinstmögliche Widerstandskraft angenommen, was der Theorie nach zu einer maximalen, aber in keiner Weise realistischen Flughöhe führt. 
+In Abb. \ref{fig-Simulationsvergleich} wird eine deutliche Abweichung zwischen der eigenen Simulation und der gemessenen Flughöhe deutlich. Die Flughöhe in der eigenen Simulation fällt mit allen Spitzen ca. $30 \text{ m}$ grö"ser aus. Ähnliches gilt für den Vergleich mit OpenRocket bei den Spitzen, für die keine Messwerte aufgenommen wurden. Die Reihenfolge, wenn man die Spitzen nach Flughöhe sortiert, ist jedoch in der eigenen Simulation die Gleiche wie die in der Simulation mit OpenRocket und den gemessenen Flughöhen. Dies spricht für einen systematischen Fehler in der eigenen Simulation, welcher eine zu gro"se Flughöhe verursacht.
+
+\begin{table}[h]
+\caption{Prozentuale Abweichung verglichen mit OpenRocket.}
+\label{tab-Simulationsvergleich}
+\begin{subtable}[c]{0.49\textwidth}
+\subcaption{Simualtion mit \textsf{C6-5}}
+\begin{tabular}{rr|l}
+	\toprule
+	Eigene Sim.	& OpenRocket	& Abweichung \\
+	\midrule
+	214,52		& 176           &  21,9 \% \\
+	194,92		& 167           &  16,7 \% \\
+	204,84		& 173           &  18,4 \% \\
+	218,18		& 181           &  20,5 \% \\
+	\bottomrule
+\end{tabular}
+\end{subtable}
+\begin{subtable}[c]{0.49\textwidth}
+\subcaption{Simualtion mit \textsf{D9-7}}
+\begin{tabular}{rr|l}
+	\toprule
+	Eigene Sim.	& OpenRocket	& Abweichung \\
+	\midrule
+	573,59		& 368           &  55,9 \% \\
+	531,75		& 357           &  48,9 \% \\
+	543,07		& 366           &  48,4 \% \\
+	548,44		& 367           &  49,4 \% \\
+	\bottomrule
+\end{tabular}
+\end{subtable}
+\end{table}
+
+\noindent
+Bei Betrachtung der prozentualen Abweichung in Tabelle \ref{tab-Simulationsvergleich} kann die Fehlerquelle weiter eingegrenzt werden. Mit gleich starkem Motor befindet sich die prozentuale Abweichung in der gleichen Grö"senordnung. Die Abweichung mit \textsf{D9-7} ist jedoch mehr als doppelt so gro"s verglichen mit \textsf{C6-5}. Der wesentliche Unterschied zwischen den Flügen ist die grö"sere Geschwindigkeit mit \textsf{D9-7}. Somit muss die Abweichung durch den Luftwiderstand zustande kommen, da die anderen Simulationsparameter unabhängig von der Geschwindigkeit sind.
+
+Dieser Fehler kommt vermutlich durch die eindimensionale Darstellung zustande. Die Rakete zeigt immer genau in Flugrichtung. Daher wird an jeder Stelle die kleinstmögliche Widerstandskraft angenommen. In Realität weicht die Rakete aber von dieser perfekten Ausrichtung ab und korrigiert sich dann wieder, sodass sie meist mit minimaler Schräglage fliegt. Dadurch ist die Widerstandskraft grö"ser, als die Simulation annimmt.
+
+%Für diese Abweichungen gibt es verschiedene Gründe. Nicht berücksichtigt wird die Massenabnahme, welche sich durch das Verbrennen der Treibladung ergibt. Au"serdem nehmen die Werte von $\rho$ und $F_{G}$ mit grö"serer Höhe ab, was unser Modell ebenfalls nicht berücksichtigt. Auch für $F_{Schub}$ wurde lediglich der Mittelwert über die Schubdauer eingesetzt.
 
 Des weiteren können auch Messungenauigkeiten als Fehlerquelle eine Rolle spielen. Insbesondere durch die sehr kleinen gemessenen Kräfte sinkt die Genauigkeit der Kraftmessung. Die Fertigung der Spitzen ist auch eine Fehlerquelle, da Abweichungen von der theoretischen Form der Spitzen entstehen (siehe \ref{sssec-Fertigungsmethoden}).
 
@@ -862,34 +884,90 @@ Das Vorhandensein der stabilen Position \texttt{pos2} erscheint zunächst bedenk
 
 
 \subsection{Flugversuch}
+\label{ssec-Flugversuch-Stabilität}
 
-Die Flugstabilität von FTV konnte durch im Flug erneut bestätigt werden, da eine fast senkrechte Flugbahn zu beobachten war. \texttt{pos2} ist im Flug nicht aufgetreten. Für eine genaue Beschreibung des Raketenstarts siehe \ref{ssec-Flugversuch-Luftwiderstand}.
+Bei allen bisherigen Flugversuchen konnte ein stabiles Flugverhalten beobachtet werden. Die Flugversuche konnten also die Stabilität von FTV erneut bestätigen, wobei mit der Haack-Spitze bis jetzt kein Flug erfolgt ist. 
+
+In Bezug auf \texttt{pos2} konnte durch Zufall eine erstaunliche Entdeckung gemacht werden. Wie in \ref{ssec-Flugversuch-Luftwiderstand} erwähnt, kam es mehrmals zu Fehlfunktionen des Bergungssystems. Dabei ist zweimal die Verbindung zwischen Körperrohr und dem Bergungssystem gerissen, sodass das Körperrohr ohne Bergungssystem heruntergefallen ist. Dabei hat es sich in beiden Fällen quer zum Luftstrom in \texttt{pos2} ausgerichtet, wodurch der Fall gebremst wurde und das Körperrohr unbeschädigt blieb. 
 
 
 \subsection{Diskussion}
 
 Zunächst liegt ein Widerspruch in der theoretischen Betrachtung der Flugstabilität von FTV und dem Versuch im Windkanal.
 
-An diesem Widerspruch lassen sich die Grenzen der hier beschriebenen Methode zur Berechnung des Druckpunktes feststellen. \texttt{pos2} tritt nur bei gro"sen Angriffswinkeln auf, die theoretische Methode setzt jedoch Angriffswinkel nahe null voraus. So gesehen liegt \texttt{pos2} lediglich au"serhalb des Geltungsbereiches der theoretischen Betrachtung. Der Flugversuch und das stabile Verhalten in \texttt{pos1} im Windkanal belegen die vorhergesagte Flugstabilität.
-
+An diesem Widerspruch lassen sich die Grenzen der hier beschriebenen Methode zur Berechnung des Druckpunktes feststellen. \texttt{pos2} tritt nur bei gro"sen Angriffswinkeln auf, die theoretische Methode setzt jedoch Angriffswinkel nahe null voraus. So gesehen liegt \texttt{pos2} lediglich au"serhalb des Geltungsbereiches der theoretischen Betrachtung. Der Flugversuch und das stabile Verhalten in \texttt{pos1} im Windkanal belegen die vorhergesagte Flugstabilität. Dass \texttt{pos2} nach abtrennen der Spitze auftritt, stellt keinen Widerspruch dar, da durch die fehlende Spitze DP und SP verschoben werden.
 
 
 %--------------------------------------------------------------------------------------------------
-\section{Fazit und Ausblick}
+\section{Fazit}
 
-\paragraph{Fazit}
-Es wurde bestätigt, dass die Form der Raketenspitze sowohl Einfluss auf den Luftwiderstand als auch die Flugstabilität hat. Beide Faktoren sind wichtig für die Flugleistung der Rakete.
-In Bezug auf die Flughöhe ist die ogive Spitze die optimale, da sie den geringsten Luftwiderstand und ein geringes Gewicht bietet.
-In Bezug auf die Flugstabilität hängt die Wahl der optimalen Spitze vom jeweiligen Raketenmodell ab. Eine meist zu geringe Kaliberzahl ist ein gängiges Problem im Modellraketenbau. Die Wahl der Form der Raketenspitze bietet eine Möglichkeit, die Lage des Druckpunktes zu beeinflussen. Der Wechsel der Raketenspitze ist somit ein Werkzeug zum Beheben von Stabilitätsproblemen.
+Es wurde bestätigt, dass die Form der Raketenspitze sowohl Einfluss auf den Luftwiderstand als auch die Flugstabilität hat. Beide Faktoren sind wichtig für die Flugleistung einer Rakete.
+
+
+\subsection{Fazit in Bezug auf den Modellraketenbau}
+
+Die Flughöhe hängt im Wesentlichen vom Luftwiderstand und der Masse der Spitze ab, wobei der Luftwiderstand bei höheren Geschwindigkeiten an Einfluss gewinnt. Somit ist für niedrige Geschwindigkeiten (bzw. kleinere Treibsätze) die Konische Spitze zu wählen, da sie die geringste Masse hat. Für schnellere Raketen eignet sich die Ogive besser, da sie einen geringeren Luftwiderstand aufweist.
+
+In Bezug auf die Flugstabilität hängt die Wahl der optimalen Spitze vom jeweiligen Raketenmodell ab. Eine meist zu geringe Kaliberzahl ist ein gängiges Problem im Modellraketenbau. Die Wahl der Form der Raketenspitze bietet eine Möglichkeit, die Lage des Druckpunktes zu beeinflussen.
 
 Es kommt im Modellraketenbau jedoch nicht nur auf gro"se Flughöhen an. Auch Faktoren wie die Ästhetik der Rakete spielen eine nicht zu unterschätzende Rolle. So gibt es im Modellraketenbau, wie in fast allen Modellbaudisziplinen, auch originalgetreue Nachbauten von grö"seren Raketen \cite{om}. Bei solchen Modellen steht die Flughöhe natürlich nicht an erster Stelle.
 Somit bleibt die Wahl der besten Raketenspitze persönliche Präferenz. Eine einheitliches Ziel des Modellraketenbaus gibt es nicht. Für Modellraketenbauer, deren Faszination für ihr Hobby vom Reiz der Geschwindigkeit und dem Optimieren der Modelle bis ins letzte Detail geprägt ist, sollten die gewonnenen Erkenntnisse jedoch eine nützliche Wissenserweiterung darstellen.
 
-\paragraph{Ausblick}
-In dieser Arbeit wurden Luftwiderstand und Flugstabilität als unabhängige Aspekte behandelt. In Realität hängen diese jedoch eng zusammen, da eine Rakete in Schräglage einen deutlich höheren Luftwiderstand aufweist. Es wäre also wünschenswert beide Aspekte zusammenzuführen und die Stabilität in die Flugsimulation mit einzubeziehen. 
-Zusätzlich sollten weitere Parameter als die Spitzenform untersucht werden. Denkbar wären z.B. die Länge der Spitze, die Oberflächenbeschaffenheit etc. 
 
-Unabhängig vom Modellraketenbau können mit den entwickelten Methoden auch viele andere Dinge untersucht werden. Denkbar wären eine Vielzahl an unterschiedlichen Fahrzeugen, wie PKW, LKW, Lokomotiven oder auch Fahrräder mit Verkleidung.
+\subsection{Fazit in Bezug auf Luft- und Raumfahrttechnik}
+
+\begin{wrapfigure}{r}{0.2\textwidth}
+	\vspace{-12pt}
+	\includegraphics[width=0.2\textwidth]{Bilder/Atlas-V.jpg}
+	\caption{Nutzlastverkleidung einer Atlas~V \cite{wik}}
+	\label{fig-Nutzlastverkleidung}
+	\vspace{-130pt}
+\end{wrapfigure}
+
+\paragraph{Die Spitze als Frachtraum}
+Die Bedeutung der Raketenspitzen für Raketen in der Raumfahrt oder Höhenforschung ist eine andere als die für eine Modellrakete. Zum einen dient hier die Spitze meist auch als Nutzlastverkleidung und zum anderen nimmt die Aerodynamische Bedeutung ab, da solche Raketen die Atmosphäre vollständig verlassen. Als Bewertungskriterium muss hier folglich auch das Fassungsvermögen einer Raketenspitze bewertet werden.
+
+\begin{table}[h]
+\centering
+\caption{Fassungsvermögen der Raketenspitzen im Vergleich}
+\begin{tabular}{r|lll}
+	\toprule
+	Spitzentyp	& Volumen [$\text{m}^{3} \cdot 10^{-4}$]	& $L \tfrac{3}{4}$ [mm]	& $L \tfrac{1}{2}$ [mm]\\
+	\midrule
+	Konisch		& 0,7530 & 55	& 90 \\
+	Ogiv		& 1,2106 & 93,8	& 129,3 \\
+	Haack		& 1,2723 & 96,1	& 136,9 \\
+	Elliptisch	& 1,5079 & 119,1& 155,9 \\
+	\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent
+Als Ma"se für das Fassungsvermögen werden neben dem Volumen die Werte $L \tfrac{3}{4}$ und $L \tfrac{1}{2}$ herangezogen, welche die Maximale Höhe einer Fracht mit $\tfrac{3}{4}$ bzw. ${1}{2}$ des Durchmessers von FTV selbst angibt. Die Experimentelle Spitze wurde hier nicht verglichen.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.4\textwidth]{Bilder/Frachtraum-Vergleich.png}
+	\caption{Die Werte $L \tfrac{3}{4}$ und $L \tfrac{1}{2}$ erklärt}
+\end{figure}
+
+Die konische Spitze bietet einen sehr geringen Raum für Fracht, da der Radius bereits am unteren Ende schnell abnimmt. Der Radius der elliptischen Spitze nimmt erst kurz vor ihrem Ende stark ab, weshalb auch grö"sere Frachten hineinpassen. Ogive und Haack-Spitze befinden sich zwischen beiden Extremen und könnten daher für einige Situationen geeignet sein. Bei einer Rakete mit Nutzlast ist also ein Kompromiss zwischen geringem Luftwiderstand, Masse und Fassungsvermögen der Spitze zu wählen. Die experimentelle Spitze wurde aus diesem Vergleich ausgeschlossen, da sie in allen drei Kategorien stark unterdurchschnittlich abschneidet.
+
+\subsection{Ausblick}
+
+\paragraph{Bessere Flugsimulation}
+In dieser Arbeit wurden Luftwiderstand und Flugstabilität als unabhängige Aspekte behandelt. In Realität hängen diese jedoch eng zusammen, da eine Rakete in Schräglage einen deutlich höheren Luftwiderstand aufweist. Es wäre also wünschenswert beide Aspekte zusammenzuführen und die Stabilität in die Flugsimulation mit einzubeziehen. Um auch andere Raketen simulieren zu können, sollten weitere Parameter neben der Spitzenform untersucht werden. Denkbar wären z.B. die Länge der Spitze, die Oberflächenbeschaffenheit etc.
+
+\paragraph{Entwicklung eines neuartigen Bergungssystems}
+Wie in \ref{ssec-Flugversuch-Stabilität} beschrieben wurde ist FTV trotz einer Fehlfunktion des Bergungssystems mehrmals ohne Fallschirm unbeschädigt gelandet. Das aerodynamische Phänomen dahinter kann genutzt werden, um ein Bergungssystem zu entwickeln, welches vollständig ohne Fallschirm auskommt. Dieses wäre weniger komplex und leichter. 
+
+\paragraph{Optimierung von Nutzlastverkleidungen}
+Wie in Abb. \ref{fig-Nutzlastverkleidung} zu sehen ist, besitzen tatsächliche Nutzlastverkleidungen häufig einen grö"seren Durchmesser als das Körperrohr. Es wäre also sinnvoll, auch den Übergang einer dicken Spitze zum Körperrohr zu untersuchen und ggf. zu optimieren.
+
+\paragraph{Weitere Anwendungen}
+In der Luft- und Raumfahrt hatte die Aerodynamik schon immer eine gro"se Bedeutung, in den letzten Jahren hat sie sich jedoch in viele neue Gebiete verbreitet. In der Entwicklung von neuen Fortbewegungsmitteln, die möglichst effizient und umweltschonend sind, spielt die Optimierung der Aerodynamik heute eine wichtige Rolle und hat sich somit auf fast alle Bereiche der zivilen Fortbewegung ausgebreitet.
+
+Unabhängig vom Raketenbau können mit den entwickelten Methoden auch viele andere Fahrzeuge untersucht werden. Denkbar wären z.B. PKW, LKW, Lokomotiven oder auch Fahrräder mit Verkleidung.
 
 
 
@@ -1016,6 +1094,10 @@ Freundlicherweise durften wir für dieses Projekt den Windkanal TWO der Carl von
 	\bibitem{pce}
 	PCE Instruments. Datenblatt PCE-FM50. \\
 	\url{http://static.mercateo.com/e5/c5859a1fca4548a3a8d0e41d29182954/pdf/kraftmessgeraet-pce-fm50.pdf} (11.01.2019;~20:30)
+	
+	\bibitem{wik}
+	Wikipedia: Atlas~V
+	\url{https://de.wikipedia.org/wiki/Atlas_V} (23.02.2019;~11:08)
 	
 	\bibitem{ew}
 	Willerding, Eugen (2018): Die mathematische Theorie ballistischer Kurven.\\ \url{https://www.eugen-willerding.de/app/download/5785857957/ballistik.pdf} (09.01.2019;~10:59)
