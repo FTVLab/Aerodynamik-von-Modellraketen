@@ -16,9 +16,9 @@
    xml:space="preserve"
    id="svg531"
    sodipodi:docname="Flughöhen-Vergleich.svg"
-   inkscape:export-filename="/home/jeremias/Schule/sf452/GitHub/trunk/Schriftliche Arbeit/Bilder/Flughöhen-Vergleich.png"
-   inkscape:export-xdpi="300"
-   inkscape:export-ydpi="300"
+   inkscape:export-filename="/home/jeremias/Schule/sf452/GitHub/trunk/Plakat/Bilder/Plakat-Flughöhen-Vergleich.png"
+   inkscape:export-xdpi="600"
+   inkscape:export-ydpi="600"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"><metadata
    id="metadata537"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
@@ -36,9 +36,9 @@
    inkscape:window-height="1049"
    id="namedview533"
    showgrid="false"
-   inkscape:zoom="0.59090278"
-   inkscape:cx="-93.92408"
-   inkscape:cy="188.97638"
+   inkscape:zoom="1.1818056"
+   inkscape:cx="13.887788"
+   inkscape:cy="190.27417"
    inkscape:window-x="0"
    inkscape:window-y="0"
    inkscape:window-maximized="1"
@@ -304,6 +304,8 @@
          stroke="none"
          id="tspan88">Ogive</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    id="text102"><tspan
@@ -319,6 +321,8 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan96">Ellipse</tspan></tspan></tspan></text>
+
+
 
  <text
    class="TextShape"
@@ -336,6 +340,8 @@
          stroke="none"
          id="tspan104">Haack</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    id="text118"><tspan
@@ -351,6 +357,8 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan112">Konisch</tspan></tspan></tspan></text>
+
+
 
  <text
    class="TextShape"
@@ -368,6 +376,8 @@
          stroke="none"
          id="tspan120">Experimentell</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    id="text134"><tspan
@@ -383,6 +393,8 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan128">0</tspan></tspan></tspan></text>
+
+
 
  <text
    class="TextShape"
@@ -400,6 +412,8 @@
          stroke="none"
          id="tspan136">50</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    id="text150"><tspan
@@ -415,6 +429,8 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan144">100</tspan></tspan></tspan></text>
+
+
 
  <text
    class="TextShape"
@@ -432,6 +448,8 @@
          stroke="none"
          id="tspan152">150</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    id="text166"><tspan
@@ -447,6 +465,8 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan160">200</tspan></tspan></tspan></text>
+
+
 
  <text
    class="TextShape"
@@ -465,6 +485,8 @@
          stroke="none"
          id="tspan168">214,52</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    transform="translate(6027,4371) rotate(-90) translate(-6027,-4371)"
@@ -481,6 +503,8 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan176">194,92</tspan></tspan></tspan></text>
+
+
 
  <text
    class="TextShape"
@@ -499,6 +523,8 @@
          stroke="none"
          id="tspan184">204,84</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    transform="translate(12288,3666) rotate(-90) translate(-12288,-3666)"
@@ -515,6 +541,8 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan192">218,18</tspan></tspan></tspan></text>
+
+
 
  <text
    class="TextShape"
@@ -533,6 +561,8 @@
          stroke="none"
          id="tspan200">182,88</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    transform="translate(3679,4416) rotate(-90) translate(-3679,-4416)"
@@ -549,6 +579,8 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan208">176</tspan></tspan></tspan></text>
+
+
 
  <text
    class="TextShape"
@@ -567,6 +599,8 @@
          stroke="none"
          id="tspan216">167</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    transform="translate(9940,4507) rotate(-90) translate(-9940,-4507)"
@@ -583,6 +617,8 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan224">173</tspan></tspan></tspan></text>
+
+
 
  <text
    class="TextShape"
@@ -601,6 +637,8 @@
          stroke="none"
          id="tspan232">181</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    transform="translate(4462,5183) rotate(-90) translate(-4462,-5183)"
@@ -617,6 +655,8 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan240">168,14</tspan></tspan></tspan></text>
+
+
 
  <text
    class="TextShape"
@@ -635,6 +675,8 @@
          stroke="none"
          id="tspan248">164,71</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    transform="translate(16984,5580) rotate(-90) translate(-16984,-5580)"
@@ -652,6 +694,8 @@
          stroke="none"
          id="tspan256">155,05</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    id="text270"><tspan
@@ -667,6 +711,8 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan264">Flughöhen mit C6-5 im Vergleich</tspan></tspan></tspan></text>
+
+
 
  <g
    id="g489">
@@ -1567,6 +1613,8 @@
          stroke="none"
          id="tspan499">Eigene Simulation</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    id="text513"><tspan
@@ -1582,6 +1630,8 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan507">OpenRocket</tspan></tspan></tspan></text>
+
+
 
  <text
    class="TextShape"
@@ -1599,6 +1649,8 @@
          stroke="none"
          id="tspan515">Flugversuch</tspan></tspan></tspan></text>
 
+
+
  <text
    class="TextShape"
    transform="translate(719,6922) rotate(-90) translate(-719,-6922)"
@@ -1615,5 +1667,7 @@
          fill="rgb(0,0,0)"
          stroke="none"
          id="tspan523">Flughöhe [m]</tspan></tspan></tspan></text>
+
+
 
 </svg>
