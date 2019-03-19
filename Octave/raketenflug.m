@@ -1,5 +1,5 @@
 %Keine Ahnung, ob das für Windows funktioniert
-graphics_toolkit('gnuplot')
+%graphics_toolkit('gnuplot')
 
 
 %Größte erreichte Flughöhe
@@ -8,7 +8,7 @@ s_max = -1;
 %Parameter für die Berechnung
 A = 0.0014486 %m^2
 F_Schub = 9 %N
-m = 0.114 %kg
+m = 0.120 %kg
 rho = 1.2 %kg/m^3
 g = 9.81 %s/m^2
 
@@ -16,7 +16,7 @@ g = 9.81 %s/m^2
 %C_w = 0.201805961 %konisch
 %C_w = 0.186535648 %ellipsoid
 %C_w = 0.170981811 %ogiv
-%C_w = 0.189116315 %Haack
+C_w = 0.189116315 %Haack
 %C_w = 0.268958542 %experimentell
 
 
@@ -36,13 +36,15 @@ k = 1;
 %Berechnung der Geschwindigkeit u.ä.
 n = 1;
 while(t(n) < t(end))
-v(n+1) = delta * (F_Schub/m -g -A*C_w*rho*v(n)^2/(m*2)*k*2.5) + v(n);
+v(n+1) = delta * (F_Schub/m -g -A*C_w*rho*v(n)^2/(m*2)*k) + v(n);
 a(n+1) = (v(n+1)-v(n)) /delta;
 s(n+1) = v(n+1) *delta + s(n);
 
 %Setze Schubkraft auf null
 if(t(n+1) >= 2.1)
 F_Schub = 0;
+else
+m = m - 0.018/(2.1/delta);
 endif
 
 %Anpassung des Luftwiderstandes
@@ -57,6 +59,8 @@ endif
 
 n++;
 endwhile
+
+m = m
 
 %Mogelei, um den ersten Wert für a anzupassen.
 a(1)=a(2);
