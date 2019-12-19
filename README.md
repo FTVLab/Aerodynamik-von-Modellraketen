@@ -1,5 +1,5 @@
 # Aerodynamik-von-Modellraketen
-Dieses Projekt befasst sich mit dem Einfluss der Form der Raketenspitze auf Luftwiderstand und Flugstabilität einer Modellrakete. Das Projekt wurde am 15.02.2019 beim Regionalwettbewerb Jugend Forscht in Emden mit dem 1. Preis ausgezeichnet. Vom 18.3. bis zum 20.3. wird das Projekt auf dem Landeswettbewerb Jugend Forscht in Clausthal-Zellerfeld ausgestellt.
+Dieses Projekt befasst sich mit dem Einfluss der Form der Raketenspitze auf Luftwiderstand und Flugstabilität einer Modellrakete. Das Projekt wurde am 15.02.2019 beim Regionalwettbewerb Jugend Forscht in Emden mit dem 1. Preis ausgezeichnet und am 20.3. auf dem Landeswettbewerb Jugend Forscht in Clausthal-Zellerfeld mit dem 2. Preis ausgezeichnet.
 
 Mit diesem Repository soll es jedem ermöglicht werden, unsere Arbeit einzusehen und nachzuvollziehen. Deshalb sind hier nicht nur die Schriftliche Fassung enthalten, sondern auch alle zugrunde liegenden Daten. Für TeX-Interessierte können ebenfalls die TeX-Dokumente eingesehen werden.
 
